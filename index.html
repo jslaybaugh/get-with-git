@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js</title>
+		<title>Get With Git</title>
 
-		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="First RefreshWF presentation on Git and GitHub">
+		<meta name="author" content="Jorin Slaybaugh">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
 
 		<link rel="stylesheet" href="lib/zenburn.css">
+		<link rel="stylesheet" href="css/show.css" />
 	</head>
 	
 	<body>
@@ -31,61 +32,62 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">CSS 3D Presentations</h3>
-					<script>
-						// Delicously hacky. Look away.
-						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
-					</script>
+					<h1>Get with Git</h1>
+					<h2>Distributed Version Control and why you should use it.</h2>
+					<p class="fragment">- or -<br />&nbsp;</p>
+					<h2 class="fragment">How I learned to stop worrying and love branching.</h2>
+					<i><small>Jorin Slaybaugh - Refresh Wichita Falls - May 21, 2012</small></i>
 				</section>
 				
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
+					<h2>Who am I</h2>
+					<ul>
+						<li class="fragment">VP of Technology at E-vent Software</li>
+						<li class="fragment">Live and work in Wichita Falls</li>
+						<li class="fragment">Graduated from MSU in 2002</li>
+						<li class="fragment">.NET | SQL | Windows</li>
+						<li class="fragment">HTML | CSS | JavaScript</li>
+						<li class="fragment">Twitter: <a href="http://twitter.com/jslaybaugh" target="_blank">@jslaybaugh</a></li>
+						<li class="fragment">Email: <a href="mailto:jslaybaugh@gmail.com" target="_blank">jslaybaugh@gmail.com</a></li>
+					</ul>
 				</section>
 				
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,<br/>
-							try pressing <a href="#/2/1">down</a>.
-						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
+						<h2>Brief History of Git</h2>
+						<p class="fragment">Created in 2005 by Linus Torvalds</p>
+						<img class="fragment" src="assets/img/linus.jpg" />  <img class="fragment" src="assets/img/penguin.jpg" />
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h2>Why?</h2>
+						<p class="fragment">Working on Linux kernel and needed better version control system than what they were using (BitKeeper). So, if it doesn't exist (and you're Linus Torvalds), you create it yourself.</p>
+						<p class="fragment">Had been using tarballs and patches so he built the system around a similar concept: snapshots of a point in time stored as binary objects in directory.</p>
+						<p class="fragment">Finished the code in less than a month and 1.0 was released later that year (only on version 1.7 in 2012)</p>
+					</section>
+					<section data-state="rainbow">
+						<h3>Alright, that's cool...</h3>
+						<br /><br />
+						<h1>But What Does It Mean????</h1>
+						<br /><br />
+						<h3 class="fragment">Let's go back a bit... What is version control and why do we need it?</h3>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Purposes</h2>
+						<h3 class="fragment">Need to be able to incrementally advance projects -- often with a team</h3>
+						<h3 class="fragment">Aren't there plenty of other solutions?</h3>
+						<p class="fragment">Subversion, SourceSafe, TFS</p>
+						<p class="fragment">All are centralized and the latter two require VS</p>
+						<p class="fragment">Mercurial (Hg) exists and is similar to Git</p>
+						<p>&nbsp;</p>
+						<h3 class="fragment">OK, I'm convinced. How does it work?</h3>
 					</section>
 				</section>
 
 				<section>
-					<h2>Holistic Overview</h2>
+					<h2>Time to play</h2>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview!
+						<img src="assets/img/yodawg.jpg" />
 					</p>
 				</section>
 
