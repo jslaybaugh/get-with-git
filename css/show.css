@@ -1,4 +1,11 @@
-﻿.rainbow {background: url(../assets/img/rainbow.jpg) no-repeat center center fixed;
+﻿.rainbow {background: url(../assets/img/doublerainbow.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;}
+	
+/* http://gifstumblr.com/images/thats-all-folks_163.gif */
+.thats-all-folks {background: url(../assets/img/thats-all-folks.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

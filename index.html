@@ -33,7 +33,7 @@
 			<div class="slides">
 				<section>
 					<h1>Get with Git</h1>
-					<h2>Distributed Version Control and why you should use it.</h2>
+					<h2>An Intro to Distributed Version Control and why you should use it.</h2>
 					<p class="fragment">- or -<br />&nbsp;</p>
 					<h2 class="fragment">How I learned to stop worrying and love branching.</h2>
 					<i><small>Jorin Slaybaugh - Refresh Wichita Falls - May 21, 2012</small></i>
@@ -49,7 +49,17 @@
 						<li class="fragment">HTML | CSS | JavaScript</li>
 						<li class="fragment">Twitter: <a href="http://twitter.com/jslaybaugh" target="_blank">@jslaybaugh</a></li>
 						<li class="fragment">Email: <a href="mailto:jslaybaugh@gmail.com" target="_blank">jslaybaugh@gmail.com</a></li>
+						<li class="fragment">Blog: <a href="http://cacheandquery.com" target="_blank">cacheandquery.com</a></li>
 					</ul>
+				</section>
+				
+				<section>
+					<h2>Disclaimers</h2>
+					<p class="fragment"><img src="http://d.pr/i/lU5+" height="230" /></p>
+					<p class="fragment">Just a brief introduction</p>
+					<p class="fragment">First (and most common) commands/concepts are simple</p>
+					<p class="fragment">Steep learning curve after that</p>
+					<p class="fragment">I am NOT an expert</p>
 				</section>
 				
 				<!-- Example of nested vertical slides -->
@@ -65,180 +75,118 @@
 						<p class="fragment">Had been using tarballs and patches so he built the system around a similar concept: snapshots of a point in time stored as binary objects in directory.</p>
 						<p class="fragment">Finished the code in less than a month and 1.0 was released later that year (only on version 1.7 in 2012)</p>
 					</section>
-					<section data-state="rainbow">
-						<h3>Alright, that's cool...</h3>
-						<br /><br />
-						<h1>But What Does It Mean????</h1>
-						<br /><br />
-						<h3 class="fragment">Let's go back a bit... What is version control and why do we need it?</h3>
-					</section>
 					<section>
 						<h2>Purposes</h2>
-						<h3 class="fragment">Need to be able to incrementally advance projects -- often with a team</h3>
-						<h3 class="fragment">Aren't there plenty of other solutions?</h3>
+						<h3 class="fragment">Need to be able to incrementally advance<br />(and roll back) projects</h3>
+						<p class="fragment">Good ol' Copy & Paste</p>
 						<p class="fragment">Subversion, SourceSafe, TFS</p>
-						<p class="fragment">All are centralized and the latter two require VS</p>
-						<p class="fragment">Mercurial (Hg) exists and is similar to Git</p>
 						<p>&nbsp;</p>
-						<h3 class="fragment">OK, I'm convinced. How does it work?</h3>
+						<h3 class="fragment">Need to work with a team</h3>
+						<p class="fragment">Every person has full copy of repository</p>
+						<p class="fragment">Mercurial (Hg) is similar to Git</p>
+					</section>
+					<section>
+						<h2>Is this really that important?</h2>
+						<div class="fragment">
+							<blockquote>This is too important to miss out on. This is possibly the biggest advance in software development technology in ten years...</blockquote>
+							<small><br />- Joel Spolsky, Co-founder of StackOverflow, 2010</small>
+						</div>
+						<p>&nbsp;</p>
+						<h3 class="fragment">OK, I'm convinced. Where do we start?</h3>
 					</section>
 				</section>
 
 				<section>
-					<h2>Time to play</h2>
-					<p>
-						<img src="assets/img/yodawg.jpg" />
-					</p>
+					<h2>Example Time!</h2>
+					<p>&nbsp;</p>
+					<p><img src="assets/img/yodawg.png" /></p>
 				</section>
 
 				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
-					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
+					<section>
+						<h2>GitHub</h2>
+						<p><a href="http://octodex.github.com" target="_blank"><img src="http://octodex.github.com/images/original.jpg" height="400" /></a></p>
+					</section>
+
+					<section>
+						<h2>So, Git is cool! But, what is GitHub?</h2>
+						<ul class="fragment">
+							<li>Hosted git repositories for everyone!</li>
+							<li>Original Slogan: <q>Git hosting: no longer a pain in the ass</q></li>
+							<li><a href="https://github.com/plans" target="_blank">Free for open source, affordable for closed projects</a></li>
+							<li>Founded in 2008. As of February 2012, 1.3+ million users and 2+ million repositories</li>
+							<li>3 founders in 2008. 8 employees in 2010. 70+ employees right now. NO venture capital.</li>
+							<li><a href="https://gist.github.com/" target="_blank">Gists</a>, <a href="http://pages.github.com/" target="_blank">Project Pages</a>, <a href="http://mac.github.com/" target="_blank">GitHub for Mac</a> (Windows client coming soon)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Example time!</h2>
+						<p>&nbsp;</p>
+						<p><img src="http://i0.kym-cdn.com/entries/icons/original/000/000/188/DancingBannana.gif" /></p>
+					</section>
+
+					<section>
+						<h2>Cool Open Source Projects<br />Available on GitHub</h2>
+						<ul class="fragment">
+							<li><a href="https://github.com/mirrors/linux" target="_blank">Linux</a></li>
+							<li><a href="https://github.com/jquery/jquery" target="_blank">jQuery</a></li>
+							<li><a href="https://github.com/mirrors/perl" target="_blank">Perl</a></li>
+							<li><a href="https://github.com/twitter/bootstrap/" target="_blank">Twitter Bootstrap</a></li>
+							<li><a href="https://github.com/rails/rails" target="_blank">Rails</a></li>
+							<li><a href="https://github.com/git/git" target="_blank">Git</a></li>
+							<li><a href="https://github.com/refreshwf" target="_blank">Refresh Wichita Falls</a></li>
+							<li><a href="https://github.com/hakimel/reveal.js" target="_blank">reveal.js</a></li>
+							<li><a href="https://github.com/repositories" target="_blank">So many more...</a></li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Should I/my code be on GitHub?</h2>
+						<p class="fragment">Do you like having complete, versioned, accessible code automatically backed up to the cloud?</p>
+						<p class="fragment">Do you work on multiple machines?</p>
+						<p class="fragment">Do you work with anyone else?</p>
+						<p class="fragment">Do you want a job?<br /><img src="http://d.pr/i/y97o+" /></p>
+					</section>
+
+					<section>
+						<h2>The future & Applications</h2>
+						<blockquote>Ryan Blair, a technologist with the New York State Senate, thinks it could even give citizens a way to fork the law &#151; proposing their own amendments to elected officials. A tool like GitHub could also make it easier for constituents to track and even voice their opinions on changes to complex legal code. <q>When you really think about it, a bill is a branch of the law,</q> he says. <q>I'm just in love with the idea of a constituent being able to send their state senator a pull request.</q></blockquote>
+						<small> - <a href="http://www.wired.com/wiredenterprise/2012/02/github/all/1" target="_blank"><q>Lord of the Files</q>, Wired Magazine 2012</a></small>
+					</section>
+				</section>
+
+				<section>
+					<h2>Personal Experience - Stripe.net</h2>
+					<ul class="fragment">
+						<li>Found an <a href="https://github.com/jaymedavis/stripe.net" target="_blank">awesome library</a></li>
+						<li>Needed to be finished, so I forked and submitted pull request</li>
+						<li>Needed my own bit of <a href="https://github.com/jslaybaugh/stripe.net/tree/live-test" target="_blank">personal awesome</a></li>
+						<li>Jayme rejected my suggestion :-(</li>
+						<li>Can still pull in upstream changes from original repo!</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2>Fun</h2>
+					<p>&nbsp;</p>
+					<h2><a href="http://www.heroku.com/" target="_blank">Heroku</a> + <a href="http://hubot.github.com/" target="_blank">Hubot</a> + <a href="http://hipchat.com" target="_blank">HipChat</a></h2>
+				</section>
+
+				<section>
+					<h2>Want to Learn More?</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li><a href="http://help.github.com/" target="_blank">GitHub Help</a> - FREE</li>
+						<li><a href="http://git-scm.com/" target="_blank">Git Project Homepage</a> - FREE</li>
+						<li><a href="http://www.amazon.com/gp/product/1430218339?ie=UTF8&tag=prgi-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1430218339" target="_blank">Pro Git</a> - Book By Scott Chacon (CIO of GitHub) - $20</li>
+						<li><a href="http://tekpub.com/productions/git" target="_blank">Tekpub</a> - 3 hours video $15</li>
 					</ul>
 				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
 
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This let's you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#/7/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#/7/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#/7/0" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+				<section data-state="thats-all-folks">
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	alert( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
 				</section>
 				
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
-				document.body.style['MozPerspective'] !== undefined ||
-				document.body.style['perspective'] !== undefined;
-
-function linkify( selector ) {
-    if( supports3DTransforms ) {
-        
-        var nodes = document.querySelectorAll( selector );
-
-        for( var i = 0, len = nodes.length; i < len; i++ ) {
-            var node = nodes[i];
-
-            if( !node.className || !node.className.match( /roll/g ) ) {
-                node.className += ' roll';
-                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
-            }
-        };
-    }
-}
-
-linkify( 'a' );
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-				
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
-				</section>
-				
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
-				</section>
-				
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-				
-				<section>
-					<h1>THE END</h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
-				</section>
 			</div>
 
 			<!-- The navigational controls UI -->
