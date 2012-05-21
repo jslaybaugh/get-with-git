@@ -22,3 +22,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;}
+	
+	
+.final {position:fixed;bottom:-50px;right:-50px;width:400px;height:200px;}

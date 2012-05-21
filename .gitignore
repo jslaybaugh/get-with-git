@@ -2,3 +2,10 @@
 .svn
 log/*.log
 tmp/**
+
+
+# VS Junk
+*.sln
+*.suo
+*.user
+*.sln.docstates
